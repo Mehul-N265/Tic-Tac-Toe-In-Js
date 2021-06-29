@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  padding: 0px;
+  margin: 0;
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgb(51, 40, 48),
+    rgb(46, 112, 112)
+  );
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 29rem;
+  height: 30rem;
+  margin: auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cell {
+  width: 9.61rem;
+  height: 10rem;
+  border: 1px solid rgb(255, 232, 232);
+  border-top: none;
+  border-left: none;
+  text-align: center;
+  font-size: 9.5rem;
+  
+  
+}
+.cell:hover {
+  background-image: linear-gradient(45deg, rgb(9, 112, 9), royalblue);
+  cursor: pointer;
+
+}
+#whoseTurnAndWinOrLose {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.restartGrid {
+  display: flex;
+  background-color: yellowgreen;
+  justify-content: center;
+  width: 10rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  margin: auto;
+  z-index: 100;
+}
+#restart{
+  background-color: black;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+#restart:hover {
+  background-color: white;
+  color: black;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
